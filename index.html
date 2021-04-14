@@ -1,194 +1,259 @@
-<div class="main-container">
-    <script>
-  
-        function gotoPage(page){
-            window.open("https://"+page, "social-page").focus()
-        }
-    </script>
-    <style>
-        .main-container {
-            width: 580px;
-            margin-left: calc(50% - 290px);
-        }
 
-        .header {
-            display: flex;
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
+<html>
+    <body>
+        <div class="main-container">
+            <script>
 
-        .title {
-            font-family: FreightBig Pro;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 36px;
-            line-height: 100%;
-            text-align: center;
-            color: #203B3E;
-        }
+                function gotoPage(page) {
+                    window.open("https://" + page, "social-page").focus()
+                }
+            </script>
+            <style>
+                .main-container {
+                    width: 600px;
+                    margin-left: calc(50% - 300px);
+                }
 
-        .description {
-            font-family: Noto Sans;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 15px;
-            line-height: 160%;
-            /* or 19px */
+                .header {
+                    display: flex;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                }
 
-            text-align: center;
-            color: #203B3E;
-        }
+                .title {
+                    font-family: FreightBig Pro;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 36px;
+                    line-height: 100%;
+                    text-align: center;
+                    color: #203B3E;
+                }
 
-        .title-container {
-            width: 80%;
-            margin-top: 40px;
-            margin-left: calc(50% - 40%);
-        }
+                .description {
+                    font-family: Noto Sans;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 15px;
+                    line-height: 160%;
+                    /* or 19px */
 
-        .description-container {
-            width: 60%;
-            margin-left: calc(50% - 30%);
+                    text-align: center;
+                    color: #203B3E;
+                }
 
-        }
+                .title-container {
+                    width: 80%;
+                    margin-top: 40px;
+                    margin-left: calc(50% - 40%);
+                }
 
-        .clicker {
-            margin-left: calc(70% - 20px);
-            display: flex;
-        }
+                .description-container {
+                    width: 60%;
+                    margin-left: calc(50% - 30%);
 
-        .head-image {
-            width: 100%;
-            margin: 0px;
-            padding: 0px;
-        }
+                }
 
-        .icon {
-            cursor: pointer;
-            width: 25px;
-            height: 25px;
-            margin-left: 20px;
-        }
+                .clicker {
+                    margin-left: calc(70% - 20px);
+                    display: flex;
+                }
 
-        .checkout-button {
-            width: 240px;
-            margin-left: calc(50% - 120px);
-            color: #D9F5DE;
-            font-size: 15px;
-            font-weight: bold;
-            background-color: #203B3E;
-            border: none;
-            height: 64px;
-            cursor: pointer;
-        }
+                .head-image {
+                    width: 100%;
+                    margin: 0px;
+                    padding: 0px;
+                }
 
-        .checkout-button:hover {
-            background-color: #142426;
-        }
+                .icon {
+                    cursor: pointer;
+                    width: 25px;
+                    height: 25px;
+                    margin-left: 20px;
+                }
 
-        .line-separator {
-            width: 80%;
-            margin-left: calc(50% - 40%);
-            margin-top: 120px;
-            height: 2px;
-            background-color: #A0AEC0;
-        }
+                .checkout-button {
+                    width: 240px;
+                    margin-left: calc(50% - 120px);
+                    color: #D9F5DE;
+                    font-size: 15px;
+                    font-weight: bold;
+                    background-color: #203B3E;
+                    border: none;
+                    height: 64px;
+                    cursor: pointer;
+                }
 
-        .footer {
-            width: 80%;
-            margin-left: calc(50% - 40%);
-            display: flex;
-        }
+                .checkout-button:hover {
+                    background-color: #142426;
+                }
 
-        .footer-text {
-            text-align: center;
-            font-family: Noto Sans;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 14px;
-            line-height: 160%;
-            /* or 19px */
+                .line-separator {
+                    width: 80%;
+                    margin-left: calc(50% - 40%);
+                    margin-top: 120px;
+                    height: 2px;
+                    background-color: #A0AEC0;
+                }
 
-            color: #203B3E;
+                .footer {
+                    width: 80%;
+                    margin-left: calc(50% - 40%);
+                    display: flex;
+                }
 
-        }
+                .footer-text {
+                    text-align: center;
+                    font-family: Noto Sans;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 160%;
+                    /* or 19px */
 
-        .reserved-rights {
-            width: 80%;
-            margin-left: calc(50% - 40%);
-        }
+                    color: #203B3E;
 
-        .footer-inline {
-            display: flex;
-            justify-content: space-around;
-            width: 80%;
-            margin-left: 10%;
-        }
+                }
 
-        .footer-copyright {
-            font-family: Noto Sans;
-            font-style: normal;
-            font-weight: 300;
-            font-size: 12px;
-            line-height: 100%;
+                .reserved-rights {
+                    width: 80%;
+                    margin-left: calc(50% - 40%);
+                }
 
-            color: #203B3E;
-        }a.checkout-button {
-         -webkit-appearance: button;
-        -moz-appearance: button;
-        appearance: button;
-        align-items: center;
-        text-align: center;
-        text-decoration: none;
-        color: initial;
-        }
-        .button-text{
-            color: #D9F5DE;
-            font-size: 20px;
-            height: 64px;
-            text-align: center;
-            
-        }
-    </style>
-    <div class="header">
-        <div>
-            <img onclick="gotoPage(`realsleep.com`)" src="https://raw.githubusercontent.com/AlexandreUser/template-email/master/logo.svg" alt="logo" />
+                .footer-inline {
+                    display: flex;
+                    justify-content: space-around;
+                    width: 80%;
+                    margin-left: 10%;
+                }
+
+                .footer-copyright {
+                    font-family: Noto Sans;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 12px;
+                    line-height: 100%;
+
+                    color: #203B3E;
+                }
+
+                a.checkout-button {
+                    -webkit-appearance: button;
+                    -moz-appearance: button;
+                    appearance: button;
+
+                    text-decoration: none;
+                    color: initial;
+                }
+            </style>
+            <div class="header">
+                <table style="width:550px;">
+                    <tr>
+                        <th style="width: 80%;">
+                            <img style="float: left;" onclick="gotoPage(`realsleep.com`)"
+                                src="https://raw.githubusercontent.com/AlexandreUser/template-email/master/RealSleep. 1.png"
+                                alt="logo" />
+                        </th>
+                        <th style="float: right;">
+                            <img onclick="gotoPage('facebook.com')" class="icon"
+                                src="https://raw.githubusercontent.com/AlexandreUser/template-email/master/FacebookLogo.png"
+                                alt="logo" />
+
+                        </th>
+                        <th style="float: right;">
+                            <img onclick="gotoPage('instagram.com')" class="icon"
+                                src="https://raw.githubusercontent.com/AlexandreUser/template-email/master/InstagramLogo.png"
+                                alt="logo" />
+
+                        </th>
+                    </tr>
+                </table>
+
+
+            </div>
+            <div>
+                <img class="head-image"
+                    src="https://raw.githubusercontent.com/AlexandreUser/template-email/master/banner.png" />
+            </div>
+            <div class="title-container">
+                <table>
+                    <tr>
+                        <th>
+                            <h1 class="title">Your personalized formula is waiting for you!</h1>
+
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <h2 class="description">Click the button below to checkout with your personalized formula!</h2>
+
+                        </th>
+
+                    </tr>
+                    <tr>
+                        <th>
+                            <form action="{checkout-url}">
+                                <button style="width: 240px;
+                                                color: #D9F5DE;
+                                                font-size: 15px;
+                                                font-weight: bold;
+                                                background-color: #203B3E;
+                                                border: none;
+                                                height: 64px;
+                                                cursor: pointer;" type="submit">Take me to Checkout</button>
+                            </form>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+            <div class="description-container">
+
+            </div>
+            <div>
+
+
+            </div>
+            <table style="width: 550px;">
+                <tr>
+                    <th style="width: 100%;">
+                        <div class="line-separator">
+                        </div>
+                    </th>
+
+                </tr>
+            </table>
+            <table style="width: 550px;">
+                <tr>
+                    <th style="min-width:10%"></th>
+                    <th style="min-width:90%"></th>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">
+                        <p>
+                            <img
+                                src="https://raw.githubusercontent.com/AlexandreUser/template-email/master/EnvelopeSimple.png" />
+                        </p>
+
+
+                    </td>
+                    <td style="width: 70%;">
+                        <p class="footer-text" style="text-align: left;">
+                            Have any questions? Contact us at <b>realsleep@realsleep.com</b>
+                        </p>
+                    </td>
+                </tr>
+
+            </table>
+            <table style="width: 550px;">
+                <tr style="width: 100%;">
+                    <th>
+                        <p class="footer-copyright">© All Rights Reserved 2021 · RealSleep, Inc.</p>
+
+                    </th>
+                </tr>
+            </table>
+        </div>
 
         </div>
-        <div class="clicker">
-            <img onclick="gotoPage('facebook.com')" class="icon" src="https://raw.githubusercontent.com/AlexandreUser/template-email/master/FacebookLogo.svg" alt="logo" />
-            <img onclick="gotoPage('instagram.com')" class="icon" src="https://raw.githubusercontent.com/AlexandreUser/template-email/master/InstagramLogo.svg" alt="logo" />
-
-        </div>
-
-    </div>
-    <div>
-        <img class="head-image" src="https://raw.githubusercontent.com/AlexandreUser/template-email/master/banner.png" />
-    </div>
-    <div class="title-container">
-        <h1 class="title">Your personalized formula is waiting for you!</h1>
-    </div>
-    <div class="description-container">
-        <h2 class="description">Click the button below to checkout with your personalized formula!</h2>
-
-    </div>
-    <div>
-            <a href="{checkout-url}" class="checkout-button">
-                <p class="button-text">Take me to Checkout</p></a>
-
-    </div>
-    <div class="line-separator">
-    </div>
-    <div class="footer">
-        <div class="footer-inline">
-            <img  style="margin-right: 20px;" src="https://raw.githubusercontent.com/AlexandreUser/template-email/master/EnvelopeSimple.svg" />
-            <p class="footer-text">
-                Have any questions? Contact us at <b>realsleep@gmail.com</b>
-            </p>
-
-        </div>
-
-    </div>
-    <div class="footer-inline">
-        <p class="footer-copyright">© All Rights Reserved 2021 · RealSleep, Inc.</p>
-    </div>
-</div>
+    </body>
+</html>
