@@ -1,0 +1,176 @@
+<div class="main-container">
+    <script>
+        function gotoCheckout(){
+            window.open("{checkout-url}","checkout-page").focus()
+        }
+        function gotoPage(page){
+            window.open("https://"+page, "social-page").focus()
+        }
+    </script>
+    <style>
+        .main-container {
+            width: 580px;
+        }
+
+        .header {
+            display: flex;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .title {
+            font-family: FreightBig Pro;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 36px;
+            line-height: 100%;
+            text-align: center;
+            color: #203B3E;
+        }
+
+        .description {
+            font-family: Noto Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 160%;
+            /* or 19px */
+
+            text-align: center;
+            color: #203B3E;
+        }
+
+        .title-container {
+            width: 80%;
+            margin-top: 40px;
+            margin-left: calc(50% - 40%);
+        }
+
+        .description-container {
+            width: 60%;
+            margin-left: calc(50% - 30%);
+
+        }
+
+        .clicker {
+            margin-left: calc(70% - 20px);
+            display: flex;
+        }
+
+        .head-image {
+            width: 100%;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .icon {
+            width: 25px;
+            height: 25px;
+            margin-left: 20px;
+        }
+
+        .checkout-button {
+            width: 240px;
+            margin-left: calc(50% - 120px);
+            color: #D9F5DE;
+            font-size: 15px;
+            font-weight: bold;
+            background-color: #203B3E;
+            border: none;
+            height: 64px;
+        }
+
+        .checkout-button:hover {
+            background-color: #142426;
+        }
+
+        .line-separator {
+            width: 80%;
+            margin-left: calc(50% - 40%);
+            margin-top: 120px;
+            height: 2px;
+            background-color: #A0AEC0;
+        }
+
+        .footer {
+            width: 80%;
+            margin-left: calc(50% - 40%);
+            display: flex;
+        }
+
+        .footer-text {
+            text-align: center;
+            font-family: Noto Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 160%;
+            /* or 19px */
+
+            color: #203B3E;
+
+        }
+
+        .reserved-rights {
+            width: 80%;
+            margin-left: calc(50% - 40%);
+        }
+
+        .footer-inline {
+            display: flex;
+            justify-content: space-around;
+            width: 80%;
+            margin-left: 10%;
+        }
+
+        .footer-copyright {
+            font-family: Noto Sans;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 100%;
+
+            color: #203B3E;
+        }
+    </style>
+    <div class="header">
+        <div>
+            <img onclick="gotoPage(`realsleep.com`)" src="https://raw.githubusercontent.com/AlexandreUser/template-email/master/logo.svg" alt="logo" />
+
+        </div>
+        <div class="clicker">
+            <img onclick="gotoPage('facebook.com')" class="icon" src="https://raw.githubusercontent.com/AlexandreUser/template-email/master/FacebookLogo.svg" alt="logo" />
+            <img onclick="gotoPage('instagram.com')" class="icon" src="https://raw.githubusercontent.com/AlexandreUser/template-email/master/InstagramLogo.svg" alt="logo" />
+
+        </div>
+
+    </div>
+    <div>
+        <img class="head-image" src="https://raw.githubusercontent.com/AlexandreUser/template-email/master/banner.png" />
+    </div>
+    <div class="title-container">
+        <h1 class="title">Your personalized formula is waiting for you!</h1>
+    </div>
+    <div class="description-container">
+        <h2 class="description">Click the button below to checkout with your personalized formula!</h2>
+
+    </div>
+    <div>
+        <button class="checkout-button" onclick="gotoCheckout()">Take me to Checkout</button>
+    </div>
+    <div class="line-separator">
+    </div>
+    <div class="footer">
+        <div class="footer-inline">
+            <img  style="margin-right: 20px;" src="https://raw.githubusercontent.com/AlexandreUser/template-email/master/EnvelopeSimple.svg" />
+            <p class="footer-text">
+                Have any questions? Contact us at <b>realsleep@gmail.com</b>
+            </p>
+
+        </div>
+
+    </div>
+    <div class="footer-inline">
+        <p class="footer-copyright">© All Rights Reserved 2021 · RealSleep, Inc.</p>
+    </div>
+</div>
